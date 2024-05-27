@@ -1,0 +1,13 @@
+name: First workflow
+on: [push]
+jobs:
+  first-workflow:
+    runs-on: ubunut-laest
+    steps:
+      - name: echo
+        run: echo "Hello!!!"
+      - name: version
+        run: |
+          node -v
+          hostname -i
+          cat /etc/redhat
